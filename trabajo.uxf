@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.baselet.element.old.allinone.SequenceDiagram</type>
+    <coordinates>
+      <x>0</x>
+      <y>70</y>
+      <w>920</w>
+      <h>470</h>
+    </coordinates>
+    <panel_attributes>title: Petición de presupuestos
+_CLIENTE~id1_|_TRAMITE~id2_|_BuildingTBM~id3_
+
+id1-&gt;&gt;id2:id1,id2: Pide consulta
+id2-&gt;&gt;id3:id2,id3: Tramita la coliscitud de consulta
+id3-&gt;&gt;id2:id3,id2: Valora y prresenta una oferta
+id2-&gt;&gt;id1:id2,id1: Respuesta + oferta
+id1-&gt;&gt;id2:id2,id1: Acepta
+id2-&gt;&gt;id3:id2,id3: Envío de requisitos
+id3-&gt;&gt;id2:id3,id2: Estudio y realización de presupuesto 
+id2-&gt;&gt;id1:id2,id1: Envío de presupuesto (sin fecha)
+id1-&gt;&gt;id2:id1,id2: Acepta presupuesto y pone fecha
+id2-&gt;&gt;id3:id2,id3: genera orden de suministros
+id3-&gt;&gt;id3:id3: Almacemanieto de  costes, materiales, facturas..
+id3-&gt;&gt;id1:id3,id1:Factura total de costo
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
